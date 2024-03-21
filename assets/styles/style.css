@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navigation-container {
+    background-color: #1992d4;
+    color: white;
+    width: 17rem;
+    min-height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    transition: width 0.3s;
+}
+
+.navigation-container.minimized {
+    width: 50px;
+}
+
+.logobrand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.navigation-container.minimized .logobrand {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logobrand img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.navigation-container.minimized .logobrand img {
+    margin: 0;
+}
+
+.logobrand h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    transition: opacity 0.3s;
+    margin: 0;
+}
+
+.navigation-container.minimized .logobrand h1 {
+    opacity: 0;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.navigation-container.minimized .toggle-btn {
+    transform: rotate(180deg);
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.navigation-item {
+    margin-bottom: 10px;
+}
+
+.navigation-item a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navigation-item a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navigation-item .material-icons {
+    margin-right: 10px;
+}
+
+.navigation-item span.nav-text {
+    transition: opacity 0.3s;
+}
+
+.navigation-container.minimized .navigation-item span.nav-text {
+    opacity: 0;
+}
+
+
+.navigation ul:last-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}

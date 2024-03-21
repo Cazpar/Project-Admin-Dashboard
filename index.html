@@ -7,11 +7,54 @@
     <title>Project: Admin Dashboard</title>
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/reset.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-
-
+    <aside class="navigation-container">
+        <div class="logobrand">
+            <img src="https://placehold.co/40x40" alt="logo">
+            <h1>Dashboard</h1>
+            <button class="toggle-btn"><span class="material-icons">chevron_left</span></button>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li class="navigation-item home"><a href="#"><span class="material-icons">home</span><span
+                            class="nav-text">Home<span></a></li>
+                <li class="navigation-item profile"><a href="#"><span class="material-icons">person</span><span
+                            class="nav-text">Profile</span></a>
+                </li>
+                <li class="navigation-item messages"><a href="#"><span class="material-icons">mail</span><span
+                            class="nav-text">Messages</span></a>
+                </li>
+                <li class="navigation-item history"><a href="#"><span class="material-icons">history</span><span
+                            class="nav-text">History</span></a>
+                </li>
+                <li class="navigation-item tasks"><a href="#"><span class="material-icons">check_circle</span><span
+                            class="nav-text">Tasks</span></a>
+                </li>
+                <li class="navigation-item communities"><a href="#"><span class="material-icons">groups</span><span
+                            class="nav-text">Communities</span></a></li>
+            </ul>
+            <ul>
+                <li class="navigation-item settings"><a href="#"><span class="material-icons">settings</span><span
+                            class="nav-text">Settings</span></a></li>
+                <li class="navigation-item support"><a href="#"><span class="material-icons">help</span><span
+                            class="nav-text">Support</span></a></li>
+                <li class="navigation-item privacy"><a href="#"><span class="material-icons">lock</span><span
+                            class="nav-text">Privacy</span></a></li>
+            </ul>
+        </nav>
+    </aside>
 </body>
+
+<script>
+    const navigationContainer = document.querySelector('.navigation-container');
+    const toggleBtn = document.querySelector('.toggle-btn');
+
+    toggleBtn.addEventListener('click', () => {
+        navigationContainer.classList.toggle('minimized');
+    });
+</script>
 
 </html>
