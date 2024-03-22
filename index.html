@@ -11,41 +11,226 @@
 </head>
 
 <body>
-    <aside class="navigation-container">
-        <div class="logobrand">
-            <img src="https://placehold.co/40x40" alt="logo">
-            <h1>Dashboard</h1>
-            <button class="toggle-btn"><span class="material-icons">chevron_left</span></button>
-        </div>
-        <nav class="navigation">
-            <ul>
-                <li class="navigation-item home"><a href="#"><span class="material-icons">home</span><span
-                            class="nav-text">Home<span></a></li>
-                <li class="navigation-item profile"><a href="#"><span class="material-icons">person</span><span
-                            class="nav-text">Profile</span></a>
-                </li>
-                <li class="navigation-item messages"><a href="#"><span class="material-icons">mail</span><span
-                            class="nav-text">Messages</span></a>
-                </li>
-                <li class="navigation-item history"><a href="#"><span class="material-icons">history</span><span
-                            class="nav-text">History</span></a>
-                </li>
-                <li class="navigation-item tasks"><a href="#"><span class="material-icons">check_circle</span><span
-                            class="nav-text">Tasks</span></a>
-                </li>
-                <li class="navigation-item communities"><a href="#"><span class="material-icons">groups</span><span
-                            class="nav-text">Communities</span></a></li>
-            </ul>
-            <ul>
-                <li class="navigation-item settings"><a href="#"><span class="material-icons">settings</span><span
-                            class="nav-text">Settings</span></a></li>
-                <li class="navigation-item support"><a href="#"><span class="material-icons">help</span><span
-                            class="nav-text">Support</span></a></li>
-                <li class="navigation-item privacy"><a href="#"><span class="material-icons">lock</span><span
-                            class="nav-text">Privacy</span></a></li>
-            </ul>
-        </nav>
-    </aside>
+    <div class="container">
+        <aside class="navigation-container">
+            <div class="logobrand">
+                <img src="https://placehold.co/40x40" alt="logo">
+                <h1>Dashboard</h1>
+                <button class="toggle-btn"><span class="material-icons">chevron_left</span></button>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li class="navigation-item home"><a href="#"><span class="material-icons">home</span><span
+                                class="nav-text">Home<span></a></li>
+                    <li class="navigation-item profile"><a href="#"><span class="material-icons">person</span><span
+                                class="nav-text">Profile</span></a>
+                    </li>
+                    <li class="navigation-item messages"><a href="#"><span class="material-icons">mail</span><span
+                                class="nav-text">Messages</span></a>
+                    </li>
+                    <li class="navigation-item history"><a href="#"><span class="material-icons">history</span><span
+                                class="nav-text">History</span></a>
+                    </li>
+                    <li class="navigation-item tasks"><a href="#"><span class="material-icons">check_circle</span><span
+                                class="nav-text">Tasks</span></a>
+                    </li>
+                    <li class="navigation-item communities"><a href="#"><span class="material-icons">groups</span><span
+                                class="nav-text">Communities</span></a></li>
+                </ul>
+                <ul>
+                    <li class="navigation-item settings"><a href="#"><span class="material-icons">settings</span><span
+                                class="nav-text">Settings</span></a></li>
+                    <li class="navigation-item support"><a href="#"><span class="material-icons">help</span><span
+                                class="nav-text">Support</span></a></li>
+                    <li class="navigation-item privacy"><a href="#"><span class="material-icons">lock</span><span
+                                class="nav-text">Privacy</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <header class="header">
+            <div class="search-bar">
+                <span class="material-icons">search</span>
+                <input type="text" placeholder="">
+            </div>
+            <div class="user-info">
+                <span class="material-icons">notifications</span>
+                <img src="assets/images/avatar.png" alt="User Avatar" class="user-avatar">
+                <span class="user-name">John Doe</span>
+            </div>
+            <div class="user-greeting">
+                <img src="assets/images/avatar.png" alt="User Avatar" class="user-avatar-large">
+                <div class="greeting-text">
+                    <p>Hi there,</p>
+                    <h2>John Doe (@johndoe)</h2>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button class="btn">New</button>
+                <button class="btn">Upload</button>
+                <button class="btn">Share</button>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="projects">
+                <h2>Your Projects</h2>
+                <div class="project-container">
+                    <div class="project-cards">
+                        <div class="project-card">
+                            <div class="project-border"></div>
+                            <div class="project-content">
+                                <h3>Super Cool Project</h3>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis
+                                    felis accumsan nec.</p>
+                            </div>
+                            <div class="project-icons">
+                                <span class="material-icons star">star</span>
+                                <span class="material-icons eye">visibility</span>
+                                <span class="material-icons share">share</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-border"></div>
+                            <div class="project-content">
+                                <h3>Super Cool Project</h3>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis
+                                    felis accumsan nec.</p>
+                            </div>
+                            <div class="project-icons">
+                                <span class="material-icons star">star</span>
+                                <span class="material-icons eye">visibility</span>
+                                <span class="material-icons share">share</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-border"></div>
+                            <div class="project-content">
+                                <h3>Super Cool Project</h3>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis
+                                    felis accumsan nec.</p>
+                            </div>
+                            <div class="project-icons">
+                                <span class="material-icons star">star</span>
+                                <span class="material-icons eye">visibility</span>
+                                <span class="material-icons share">share</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-border"></div>
+                            <div class="project-content">
+                                <h3>Super Cool Project</h3>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis
+                                    felis accumsan nec.</p>
+                            </div>
+                            <div class="project-icons">
+                                <span class="material-icons star">star</span>
+                                <span class="material-icons eye">visibility</span>
+                                <span class="material-icons share">share</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-border"></div>
+                            <div class="project-content">
+                                <h3>Super Cool Project</h3>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis
+                                    felis accumsan nec.</p>
+                            </div>
+                            <div class="project-icons">
+                                <span class="material-icons star">star</span>
+                                <span class="material-icons eye">visibility</span>
+                                <span class="material-icons share">share</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-border"></div>
+                            <div class="project-content">
+                                <h3>Super Cool Project</h3>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis
+                                    felis accumsan nec.</p>
+                            </div>
+                            <div class="project-icons">
+                                <span class="material-icons star">star</span>
+                                <span class="material-icons eye">visibility</span>
+                                <span class="material-icons share">share</span>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-border"></div>
+                            <div class="project-content">
+                                <h3>Super Cool Project</h3>
+                                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis
+                                    felis accumsan nec.</p>
+                            </div>
+                            <div class="project-icons">
+                                <span class="material-icons star">star</span>
+                                <span class="material-icons eye">visibility</span>
+                                <span class="material-icons share">share</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="announcements">
+                <h2>Announcements</h2>
+                <div class="announcement-cards">
+                    <div class="announcement-card">
+                        <div class="announcement-content">
+                            <h4>Site Maintenance</h4>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales
+                                congue.</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="announcement-card">
+                        <div class="announcement-content">
+                            <h4>Community Share Day</h4>
+                            <p>Nam vel lorem tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan
+                                porttitor.</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="announcement-card">
+                        <div class="announcement-content">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Praesent congue lectus ut ante condimentum, eu congue magna semper in mattis.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="trending">
+                <h2>Trending</h2>
+                <div class="trending-cards">
+                    <div class="trending-card">
+                        <img src="avatar1.jpg" alt="Avatar 1" class="trending-avatar">
+                        <div class="trending-content">
+                            <p class="trending-username">@tegan</p>
+                            <p class="trending-project">World Peace Builder</p>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <img src="avatar2.jpg" alt="Avatar 2" class="trending-avatar">
+                        <div class="trending-content">
+                            <p class="trending-username">@morgan</p>
+                            <p class="trending-project">Super Cool Project</p>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <img src="avatar3.jpg" alt="Avatar 3" class="trending-avatar">
+                        <div class="trending-content">
+                            <p class="trending-username">@kendall</p>
+                            <p class="trending-project">Life Changing App</p>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <img src="avatar4.jpg" alt="Avatar 4" class="trending-avatar">
+                        <div class="trending-content">
+                            <p class="trending-username">@alex</p>
+                            <p class="trending-project">No Traffic Maker</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 
 <script>
